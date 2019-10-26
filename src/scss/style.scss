@@ -1,0 +1,143 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+
+  .header--nav {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header--h1 {
+    width: 100%;
+  }
+
+  .header--menu {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+  }
+}
+
+.main {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  justify-content: space-around;
+  
+  .div_menu {
+    width: 50%;
+
+    .div_menu--div_controls, .div_menu--div_colors {
+      margin-top: 50px;
+      margin-left: 10%;
+      height: 246px;
+      width: 228px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+      
+      a {
+        display: block;
+        width: 198px;
+        height: 50px;
+        padding-left: 30px;
+        color: rgba(0, 0, 0, 0.541327);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 5px;
+
+        &.div_menu--div_controls-a_paint {
+          background-image: url('../assets/images/fill-icon.png');
+        }
+
+        &.div_menu--div_controls-a_color {
+          background-image: url('../assets/images/eyedropper-icon.png');
+        }
+
+        &.div_menu--div_controls-a_move {
+          background-image: url('../assets/images/move-icon.png');
+        }
+
+        &.div_menu--div_controls-a_transform {
+          background-image: url('../assets/images/transform-color.png');
+        }
+
+        &.div_menu--div_colors-a_current_paint {
+          background-image: url('../assets/images/curr-color.png');
+        }
+
+        &.div_menu--div_colors-a_previous_color {
+          background-image: url('../assets/images/prev-color.png');
+        }
+        
+        &.div_menu--div_colors-a_red {
+          background-image: url('../assets/images/red-color.png');
+        }
+
+        &.div_menu--div_colors-a_blue {
+          background-image: url('../assets/images/blue-color.png');
+        }
+        
+        p {
+          padding-top: 17px;
+        }
+      }
+
+
+      a:hover {
+        cursor: pointer;
+        background-color: aqua;
+      }
+    }
+  }
+
+  .div_menu_size {
+    margin-top: 50px;
+    margin-left: 10%;
+    height: 246px;
+    width: 228px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+
+    a {
+      display: block;
+      width: 198px;
+      height: 50px;
+      padding-left: 30px;
+      color: rgba(0, 0, 0, 0.541327);
+      background-image: url('../assets/images/box.png');
+      background-repeat: no-repeat;
+      background-position-y: center;
+      background-position-x: 5px;
+
+      p {
+        padding-top: 17px;
+      }
+    }
+
+    a:hover {
+      cursor: pointer;
+      background-color: aqua;
+    }
+  }
+
+  .div_canvas {
+    width: 512px;
+    height: 512px;
+    margin-top: 100px;
+    box-sizing: content-box;
+    background-color: grey;
+
+    #canvas {
+      background-size: cover;
+    }
+  }
+}
