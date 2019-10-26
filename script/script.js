@@ -1,10 +1,10 @@
 function draw(state) {
     switch (state) {
         case 1: 
-            var myRequest = new Request('./data/4x4.json');
+            var myRequest = new Request('../data/4x4.json');
             break;
         case 2:
-            var myRequest = new Request('./data/32x32.json');
+            var myRequest = new Request('../data/32x32.json');
             break;
         default: {
             let canvas = document.getElementById('canvas');

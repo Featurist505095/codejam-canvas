@@ -1,0 +1,95 @@
+* {
+  padding: 0px;
+  margin: 0px; }
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12); }
+  .header .header--nav {
+    width: 40px;
+    height: 40px; }
+  .header .header--h1 {
+    width: 100%; }
+  .header .header--menu {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px; }
+
+.main {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  justify-content: space-around; }
+  .main .div_menu {
+    width: 50%; }
+    .main .div_menu .div_menu--div_controls, .main .div_menu .div_menu--div_colors {
+      margin-top: 50px;
+      margin-left: 10%;
+      height: 246px;
+      width: 228px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12); }
+      .main .div_menu .div_menu--div_controls a, .main .div_menu .div_menu--div_colors a {
+        display: block;
+        width: 198px;
+        height: 50px;
+        padding-left: 30px;
+        color: rgba(0, 0, 0, 0.541327);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 5px; }
+        .main .div_menu .div_menu--div_controls a.div_menu--div_controls-a_paint, .main .div_menu .div_menu--div_colors a.div_menu--div_controls-a_paint {
+          background-image: url(src/assets/images/fill-icon.png); }
+        .main .div_menu .div_menu--div_controls a.div_menu--div_controls-a_color, .main .div_menu .div_menu--div_colors a.div_menu--div_controls-a_color {
+          background-image: url(src/assets/images/eyedropper-icon.png); }
+        .main .div_menu .div_menu--div_controls a.div_menu--div_controls-a_move, .main .div_menu .div_menu--div_colors a.div_menu--div_controls-a_move {
+          background-image: url(src/assets/images/move-icon.png); }
+        .main .div_menu .div_menu--div_controls a.div_menu--div_controls-a_transform, .main .div_menu .div_menu--div_colors a.div_menu--div_controls-a_transform {
+          background-image: url(src/assets/images/transform-color.png); }
+        .main .div_menu .div_menu--div_controls a.div_menu--div_colors-a_current_paint, .main .div_menu .div_menu--div_colors a.div_menu--div_colors-a_current_paint {
+          background-image: url(src/assets/images/curr-color.png); }
+        .main .div_menu .div_menu--div_controls a.div_menu--div_colors-a_previous_color, .main .div_menu .div_menu--div_colors a.div_menu--div_colors-a_previous_color {
+          background-image: url(src/assets/images/prev-color.png); }
+        .main .div_menu .div_menu--div_controls a.div_menu--div_colors-a_red, .main .div_menu .div_menu--div_colors a.div_menu--div_colors-a_red {
+          background-image: url(src/assets/images/red-color.png); }
+        .main .div_menu .div_menu--div_controls a.div_menu--div_colors-a_blue, .main .div_menu .div_menu--div_colors a.div_menu--div_colors-a_blue {
+          background-image: url(src/assets/images/blue-color.png); }
+        .main .div_menu .div_menu--div_controls a p, .main .div_menu .div_menu--div_colors a p {
+          padding-top: 17px; }
+      .main .div_menu .div_menu--div_controls a:hover, .main .div_menu .div_menu--div_colors a:hover {
+        cursor: pointer;
+        background-color: aqua; }
+  .main .div_menu_size {
+    margin-top: 50px;
+    margin-left: 10%;
+    height: 246px;
+    width: 228px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12); }
+    .main .div_menu_size a {
+      display: block;
+      width: 198px;
+      height: 50px;
+      padding-left: 30px;
+      color: rgba(0, 0, 0, 0.541327);
+      background-image: url(src/assets/images/box.png);
+      background-repeat: no-repeat;
+      background-position-y: center;
+      background-position-x: 5px; }
+      .main .div_menu_size a p {
+        padding-top: 17px; }
+    .main .div_menu_size a:hover {
+      cursor: pointer;
+      background-color: aqua; }
+  .main .div_canvas {
+    width: 512px;
+    height: 512px;
+    margin-top: 100px;
+    box-sizing: content-box;
+    background-color: grey; }
+    .main .div_canvas #canvas {
+      background-size: cover; }
