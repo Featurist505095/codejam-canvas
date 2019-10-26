@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SASS Quick Start</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header class="header">
+    <a class="header--nav" href="">
+      <img src="assets/images/nav icon.png" alt="">
+    </a>
+    <h1 id="draw" class="header--h1">CodeJam - Pallete</h1>
+    <a class="header--menu" href="">
+      <img src="assets/images/menu icon.png" alt="">
+    </a>
+  </header>
+  <main class="main">
+    <div class="div_menu">
+      <div class="div_menu--div_controls">
+        <a class="div_menu--div_controls-a_paint">
+          <p>Paint bucket</p>
+        </a>
+        <a class="div_menu--div_controls-a_color">
+          <p>Choose color</p>
+        </a>
+        <hr>
+        <a class="div_menu--div_controls-a_move">
+          <p>Move</p>
+        </a>
+        <a class="div_menu--div_controls-a_transform">
+          <p>Transform</p>
+        </a>
+      </div>
+      <div class="div_menu--div_colors">
+        <a class="div_menu--div_colors-a_current_paint">
+          <p>Current color</p>
+        </a>
+        <a class="div_menu--div_colors-a_previous_color">
+          <p>Prev color</p>
+        </a>
+        <hr>
+        <a class="div_menu--div_colors-a_red">
+          <p>red</p>
+        </a>
+        <a class="div_menu--div_colors-a_blue">
+          <p>blue</p>
+        </a>
+      </div>
+    </div>
+    <div class="div_canvas">
+      <canvas id="canvas" width="512" height="512">
+          <img src="assets/images/image.png" alt=""/>
+      </canvas>
+    </div>
+    <div class="div_menu_size">
+      <a id="first_image">
+        <p>4x4</p>
+      </a>
+      <a id="second_image">
+        <p>32x32</p>
+      </a>
+      <a id="default_image">
+        <p>256x256</p>
+      </a>
+    </div>
+  </main>
+  <footer class="footer"></footer>
+</body>
+</html>
